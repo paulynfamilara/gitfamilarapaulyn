@@ -1,0 +1,63 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, transparent 10%, rgba(190, 232, 118, 0.8) 50%, transparent 90%);
+    background-size: 200% 100%;
+    animation: waveBackground 4s linear infinite;
+}
+
+@keyframes waveBackground {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.card {
+    background-color: rgba(219, 253, 242, 0.8);
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-width: 15px;
+    border-style: double;
+    border-color: aqua;
+}
+
+.card img {
+    border: 2px solid azure;
+    max-width: 100%;
+    height: auto;
+}
+
+.poem {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 1000px) {
+    .card {
+        padding-top: 50px;
+        padding-left: 20px;
+    }
+    .card img {
+        width: 1200px;
+        height: 550px;
+    }
+}
